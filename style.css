@@ -34,7 +34,8 @@ a:hover {
 }
 
 img {
-    width: 100%;
+    width: 220px;
+    height: 250px;
 }
 
 .text-brand {
@@ -199,4 +200,8 @@ img {
     background-color: var(--color-base);
     border-radius: 100px;
     font-size: 24px;
+}
+.card-custom-image img{
+    width: 100%;
+    
 }
