@@ -3,22 +3,45 @@
 :root {
     --color-body: #b6cbce;
     --color-heading: #eef3db;
-    --color-base: #033f47;
+    --color-base: #050505;
     --color-base2: #022a30;
-    --color-brand: #e0f780;
-    --color-brand2: #deff58;
+    --color-brand: rgb(219,18,51);
+    --color-brand2: rgba(9,11,121,1);
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
 
+nav a{
+    color:white !important;
+}
+
+a{
+    color:rgba(244, 78, 78, 0.994) !important;
+}
+
+.service:hover{
+    background: linear-gradient(141deg,  rgba(9,11,121,1) 40%,  rgba(227,9,45,0.9164040616246498) 59%);
+}
+
+.card-custom:hover{
+    background: linear-gradient(141deg,  rgba(9,11,121,1) 40%,  rgba(227,9,45,0.9164040616246498) 59%);
+  
+
+}
+
 body {
-    background-color: #022a30;
+    background-color: #131313 !important;
     /* background-color: var(--color-base2); */
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-heading);
     font-weight: 700;
 }
@@ -54,7 +77,7 @@ img {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255,255,255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .shadow-effect {
@@ -95,11 +118,21 @@ img {
     color: var(--color-brand);
 }
 
-@media (min-width: 992px) {
+.hero-bg {
+    background: rgb(227,9,45);
+background: linear-gradient(141deg, rgba(227,9,45,0.9164040616246498) 13%, rgba(9,11,121,1) 59%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    box-shadow: 5px 5px 10px white;
+}
+
+@media (min-width:850px) {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background: linear-gradient(141deg, rgba(227,9,45,0.9164040616246498) 13%, rgba(9,11,121,1) 59%), url('./website pic/sidebar-img.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -154,6 +187,7 @@ img {
 }
 
 /* CARD */
+
 .card-custom .card-custom-image {
     overflow: hidden;
 }
@@ -201,7 +235,8 @@ img {
     border-radius: 100px;
     font-size: 24px;
 }
-.card-custom-image img{
+
+.card-custom-image img {
     width: 100%;
-    
+
 }
